@@ -186,7 +186,7 @@
 
  }
  .img:hover{
-    transform: rotate(360deg);
+    transform: rotate(180deg);
  }
  .child5{
      width: 100%;
