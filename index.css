@@ -1,0 +1,201 @@
+*{
+     box-sizing:border-box ;
+     margin: 0;
+     padding: 0;
+     list-style-type: none;
+     text-decoration: none;
+
+}
+.parent{
+     display: grid;
+     grid-template-areas:
+      "header header header header"
+      "header1 header1 header1 header1"
+     " aside section section section"
+      "aside section section section"
+      "artical section section section"
+      "footer footer footer footer" ;
+      width: 100%;
+      
+      
+      
+ }
+ .child1{
+     width:100%;
+     height: 80px;
+     cursor: pointer;
+     grid-area: header;
+     
+     
+ }
+ .head{
+     display:grid;
+     grid-template-columns: auto auto auto auto auto;
+     justify-content: space-around;
+     padding-top: 10px;
+     align-items: center;
+     text-align: center;
+     
+ }
+ summary{
+     width: 170px;
+     border: 1px solid whitesmoke;
+     border-radius: 10px;
+     align-content: center;
+     padding-top: 20px;
+ }
+ .div{
+     border: 1px solid lightslategray;
+     background-color: burlywood;
+     border-radius: 5px;
+     margin-bottom: 20px;
+ }
+ .drop2{
+     width: 250px;
+     height: 50px;
+     border-radius: 5px;
+ }
+ .drop2::placeholder{
+      font-style: italic;
+      font-weight: bolder;
+ }
+ .span::after{
+     content: "My Cart";
+     padding: 10PX;
+     border: 1px solid white;
+     background-color:green;
+     color: white;
+     border-radius: 5px;
+ }
+.head2{
+    display: grid;
+    grid-template-columns:auto auto auto auto auto auto ;
+    justify-content: space-evenly;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin-top: 30px;
+
+}
+
+ .child12{
+     width:100%;
+     height: 60px;
+    
+     grid-area: header1;
+     cursor: pointer;
+ }
+
+ .child2{
+     width: 343px;
+     height: 415px;
+     cursor: pointer;
+     grid-area:aside;
+     align-content:center;
+     text-align: center;
+    
+ }
+ .p{
+    width: 300px;
+    height: 320px;
+    border: 1px solid lightgreen;
+    border-radius: 10px;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    font-size: larger;
+    font-weight: bold;
+    
+
+ }
+ .p:hover{
+    transform:scale(1,2) ;
+    transition-timing-function: linear;
+    transition-duration: 2s;
+ }
+ .child3{
+     display: grid;
+     width: 1000px;
+     height: 615px;
+     cursor: pointer;
+     grid-area: section;
+     grid-template-columns:200px 200px 200px 200px;
+     grid-template-rows:250px 250px ;
+     padding: 10px;
+     row-gap: 10px;
+     column-gap: 10px;
+     justify-content: space-around;
+     
+
+     
+ }
+ .child32{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    height: 250px;
+    width: 200px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+
+ }
+ .child32:hover{
+    transform: scale(1,1) rotate(60deg) skew(45deg);
+    transition-duration: 3s;
+    transition-timing-function: ease;
+
+    
+ }
+ .child31:hover{
+    transform: scale(1,1) rotate(60deg) skew(45deg);
+    transition-duration: 3s;
+    transition-timing-function: ease;
+ }
+ 
+ .child31{
+     border: 1px solid black;
+     border-radius: 10px;
+     background-color: whitesmoke;
+     height: 250px;
+     width: 200px;
+     align-items: center;
+     align-content: center;
+     text-align: center;
+
+ }
+ .add{
+     content: "ADD";
+     padding: 5PX;
+     border: 1px solid rgb(39, 223, 15);
+     background-color:white ;
+     color: rgb(119, 216, 22);
+     margin-left: 100px;
+ }
+ .child4{
+     width: 343px;;
+     height:200px ;
+     grid-area: artical;
+     
+ }
+ .img{
+   
+    border-radius: 10px;
+    margin: top -30px;
+
+ }
+ .img:hover{
+    transform: rotate(360deg);
+ }
+ .child5{
+     width: 100%;
+     height: 100px;
+     
+     grid-area:footer;
+
+ }
+ .footer{
+    color: chocolate;
+    text-shadow: 3px 3px 3px orange;
+ }
